@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <div class="show">
+    <div class="smoothie">
+      <img src="/smoothie.png" alt="">
+    </div>
+    <div class="headings">
+      <h2>Best Courses</h2>
+      <h3>For students of all type</h3>
+    </div>
+  </div>
+  
+  <div>
+    <a href="/smoothies" class="btn">View Courses</a>
+    <% if(user){ %>
+      <a href="/smoothies" class="btn">Your Workspace</a>
+    <% } %>
+    
+  </div>
+</header>
+
+
+<%- include('partials/footer'); -%>
